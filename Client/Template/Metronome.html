@@ -6,12 +6,15 @@
   <h2>Enter a tempo and press play</h2>
   <p id="Alert"></p><!-- Empty paragraph for alert messaging -->
   
-  <audio id="tick" src="http://www.soundjay.com/switch/switch-24.wav" >
+  <audio id="tick" src="/audio/MetronomeTick.mp3">
   Your browser does not support the audio element.
   </audio>
 
   {{> bpmInput}}
   {{> control}}
+  <div id="container">
+  <div id="animate">move</div>
+  </div>
 </body>
 
 <template name="bpmInput">
@@ -21,4 +24,5 @@
 <template name="control">
 	<button id="play">Play</button>
 	<button id="stop">Stop</button>
+  <!-- <button id="test">Test</button> -->
 </template>

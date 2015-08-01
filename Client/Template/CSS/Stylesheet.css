@@ -1,1 +1,17 @@
-/* No styles Yet */
+#animate{
+	background-color: black;
+	width: 60px;
+	height: 60px;
+	position:absolute;
+
+}
+#container{
+	width: 30%;
+	height: 80px;
+	border-color: black;
+}
+@keyframes move{
+	0%{left:0%;}
+	
+	100%{left:20%; }
+}
